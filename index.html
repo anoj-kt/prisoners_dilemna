@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer type="module" src="./index.js"></script>
+    <title>Prisoner's Dilemna</title>
+  </head>
+  <body class="min-h-screen flex flex-col justify-center items-center">
+    <h1 class="text-3xl m-4">Prisoner's Dilemna</h1>
+    <main>
+      <div class="m-4">
+        <button id="attack" class="btn btn-error text-3xl w-40">Attack</button>
+        <button id="corperate" class="btn btn-success text-3xl w-40">
+          Corperate
+        </button>
+      </div>
+      <div id="user-choices" class="flex justify-center"></div>
+      <div id="computer-choices" class="flex justify-center"></div>
+      <div class="bg-slate-300 p-4 rounded-md mt-4">
+        <p>User Score: <span id="user-score">0</span></p>
+        <p>Computer Score: <span id="computer-score">0</span></p>
+      </div>
+    </main>
+  </body>
+</html>
